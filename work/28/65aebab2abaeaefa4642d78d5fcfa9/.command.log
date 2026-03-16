@@ -1,0 +1,8 @@
+TrimmomaticPE: Started with arguments:
+ -phred33 A_33_FDSW202661760-1r_HTNK5DSXY_L3_sub_1.fq.gz A_33_FDSW202661760-1r_HTNK5DSXY_L3_sub_2.fq.gz A_33_FDSW202661760-1r_HTNK5DSXY_L3_sub_1.paired.fq.gz A_33_FDSW202661760-1r_HTNK5DSXY_L3_sub_1.unpaired.fq.gz A_33_FDSW202661760-1r_HTNK5DSXY_L3_sub_2.paired.fq.gz A_33_FDSW202661760-1r_HTNK5DSXY_L3_sub_2.unpaired.fq.gz ILLUMINACLIP:/Users/vinithanadar/miniconda/envs/nf_course/share/trimmomatic-0.40-0/adapters/TruSeq3-PE.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+Multiple cores found: Using 4 threads
+ILLUMINACLIP: Using adapter file from user-specified absolute path: /Users/vinithanadar/miniconda/envs/nf_course/share/trimmomatic-0.40-0/adapters/TruSeq3-PE.fa
+Using PrefixPair: 'TACACTCTTTCCCTACACGACGCTCTTCCGATCT' and 'GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT'
+ILLUMINACLIP: Using 1 prefix pairs, 0 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
+Input Read Pairs: 395647 Both Surviving: 388230 (98.13%) Forward Only Surviving: 5401 (1.37%) Reverse Only Surviving: 1625 (0.41%) Dropped: 391 (0.10%)
+TrimmomaticPE: Completed successfully
