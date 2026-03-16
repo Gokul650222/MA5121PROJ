@@ -1,4 +1,4 @@
- #!/usr/bin/env nextflow
+#!/usr/bin/env nextflow
 
 nextflow.enable.dsl=2
 
@@ -27,7 +27,6 @@ process fastqc {
 
     output:
     path("*_fastqc.{zip,html}")
-
     script:
     """
     fastqc ${reads}
@@ -44,14 +43,18 @@ process trimmomatic {
     path adapters_file
 
     output:
-    tuple val("${sample}"), path("${sample}*.trimmed.fq.gz")
-    tuple val("${sample}"), path("${sample}*.discarded.fq.gz")
+    file "${sample}_1.paired.fq.gz"
+    file "${sample}_2.paired.fq.gz"
 
     script:
     """
-    trimmomatic PE -phred33 ${reads[0]} ${reads[1]} ${sample}_1.trimmed.fq.gz ${sample}_1.discarded.fq.gz ${sample}_2.trimmed.fq.gz ${sample}_2.discarded.fq.gz 
-    ILLUMINACLIP:${adapters_file}:2:30:10
-    """
+trimmomatic PE -phred33 \
+${reads[0]} ${reads[1]} \
+${sample}_1.paired.fq.gz ${sample}_1.unpaired.fq.gz \
+${sample}_2.paired.fq.gz ${sample}_2.unpaired.fq.gz \
+ILLUMINACLIP:/Users/vinithanadar/miniconda/envs/nf_course/share/trimmomatic-0.40-0/adapters/TruSeq3-PE.fa:2:30:10 \
+LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+"""
 }
 
 // Run the workflowww
