@@ -7,3 +7,5 @@
 2026-03-16 17:31:14	-	mighty_fourier	-	7a46afe1fa88a75fb1642354e2983fac	cc6d375d-8c99-42a8-9cec-2807254c8d77	nextflow run main.nf
 2026-03-16 17:35:39	-	high_mcclintock	-	cec39bed8139152a5aecc9cc7da031c2	1209df45-71c4-4da5-8568-03bc235305da	nextflow run main.nf
 2026-03-16 17:38:11	-	cheesy_picasso	-	cec39bed8139152a5aecc9cc7da031c2	6914cc6b-2ba4-4515-9f41-94924cf7663e	nextflow run main.nf
+2026-03-16 18:23:20	2.4s	suspicious_mandelbrot	ERR	4eb2b59d2d6b05c3fc698b267583ebbd	fa703b92-4f18-4aa5-bfb7-9791aada644e	nextflow run main.nf
+2026-03-16 18:24:46	3.3s	peaceful_pesquet	ERR	4eb2b59d2d6b05c3fc698b267583ebbd	2c5c42d8-b51d-4626-9249-acce9e7c19bc	nextflow run main.nf
