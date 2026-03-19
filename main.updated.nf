@@ -8,7 +8,7 @@ nextflow.enable.dsl=2
 params.reads = 'data/*_{1,2}.fq.gz'       
 params.outdir = 'outputs'                
 params.adapters = 'adapters.fa'          
-
+params.genome = 'data/LG12.fasta'
 
 log.info """
       LIST OF PARAMETERS
