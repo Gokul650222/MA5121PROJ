@@ -34,7 +34,7 @@ adapter_ch = Channel.fromPath(params.adapters)
 // -------------------------
 process fastqc {
     label 'fastqc'
-    publishDir "${params.outdir}/quality-control", mode: 'copy', overwrite: true
+    publishDir "${params.outdir}/quality-control-${sample}/", mode: 'copy', overwrite: true
 
     input:
     tuple val(sample), path(reads)
@@ -44,7 +44,7 @@ process fastqc {
 
     script:
     """
-    fastqc ${reads[0]} ${reads[1]}
+    fastqc ${reads}
     """
 }
 
@@ -60,19 +60,15 @@ process trimmomatic {
     path adapters_file
 
     output:
-    file "${sample}_1.paired.fq.gz"
-    file "${sample}_1.unpaired.fq.gz"
-    file "${sample}_2.paired.fq.gz"
-    file "${sample}_2.unpaired.fq.gz"
+    file "${sample}_*.paired.fq.gz"
+    file "${sample}_*.unpaired.fq.gz"
 
     script:
     """
     trimmomatic PE -phred33 \
     ${reads[0]} ${reads[1]} \
-    ${sample}_1.paired.fq.gz ${sample}_1.unpaired.fq.gz \
-    ${sample}_2.paired.fq.gz ${sample}_2.unpaired.fq.gz \
-    ILLUMINACLIP:${adapters_file}:2:30:10 \
-    LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+    ${sample}_*.paired.fq.gz ${sample}_*.unpaired.fq.gz \
+    ILLUMINACLIP:${adapters_file}:2:30:10
     """
 }
 
