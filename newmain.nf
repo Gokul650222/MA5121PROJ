@@ -23,8 +23,7 @@ Adapters         : ${params.adapters}
 
 // Channel for paired-end reads
 
-read_pairs_ch = Channel.fromFilePairs(params.reads, checkIfExists: true)
-    .map { sample, reads -> tuple(sample, reads.collect{it.toAbsolutePath()}) }
+read_pairs_ch = Channel.fromFilePairs(params.reads, checkIfExists: true).map { sample, reads -> tuple(sample, reads.collect{it.toAbsolutePath()}) }
 
 
 // Channel for adapter file
@@ -33,7 +32,7 @@ adapter_ch = Channel.fromPath(params.adapters)
 
 // channel for the genome file
 
-genome_ch = Channel.fromPath("data/LG12.fasta*")
+genome_ch = Channel.fromPath("data/LG12.fasta*").collect()
 
 
 
@@ -96,7 +95,7 @@ process bwa_mem2 {
 
     script:
     """
-    bwa-mem2 mem -t 2 ./data/LG12.fasta ${paired_reads[0]} ${paired_reads[1]} | samtools sort -@ 2 -o ${sample}.bam
+    bwa-mem2 mem -t 2 LG12.fasta ${paired_reads[0]} ${paired_reads[1]} | samtools sort -@ 2 -o ${sample}.bam
     """
 }
 

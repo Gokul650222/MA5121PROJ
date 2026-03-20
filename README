@@ -1,0 +1,32 @@
+ NEXTFLOW ASSIGNMENT ERROR FACED PAGE:
+
+Welcome to this page .We Gokul Ganesan, Vinitha Nadar, and Divyansh are the group of three in this NEXTFLOW ASSIGNMENT . In this page we have mentioned about what are the errors we faced to complete this assignment.
+
+
+The errors we faced  are:
+ 
+1) The main.nf is given with some errors  for example It doesn't add the adapter_ch in the output file for the Trimmoatic process and some spelling mistakes like D for params.outDir to params.outdir
+
+2) After we changed errors and checked the nextflow run by enabling the conda environment,and thus the fastqc and trimmomatic process is running 
+
+3) We renamed the made a new main.nf file as newmain.nf file and other drafts codes are stored in main.updated.nf and main.updated_temp.nf files
+
+3) Added some alignment ,for that we included the bwa-mem2 process and we included the path ,input and output,script .. for this bwa-mem2 process we included the zip files which is provided in the assignment
+
+4)After the 3 rd step,we included the FASTA files in the output and script ,initially we got paired and un paired samples which each has 2 files which is unpaired 1,2.,for the bwa-mem2 process we used paired samples1,2
+
+5) when the erros are fixed in fastqc,timmomatic and bwa-mem2 ,we got the .bam file and it is stored in the output folder in the repo 
+
+6) we created a modules folder , and added fastqc process in fastqc.nf same goes for timmomatic and bwa-mem2.To check the another main.nf file by just using the include path in fastqc,trimmomatic and bwa-mem2 process
+
+7) we made a newmain1.nf file to check the process is still running. it works there as well.The changes can be viewed in newmain1.nf file for reference
+
+This report is based on the errors we faced and rectified during this assigned time period and this commits were usually done from a single person's laptop soometimes because we faced ubuntu crashes in other laptops 
+but this report and the assignment was contributed equally by three teammates.
+
+
+Report submitted by:
+
+Gokul Ganesan
+Vinitha Nadar
+Divyash Gupta
