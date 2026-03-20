@@ -1,69 +1,88 @@
-Mar-16 16:57:55.140 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf
-Mar-16 16:57:55.305 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 25.10.4
-Mar-16 16:57:55.373 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/gokul/.nextflow/plugins; core-plugins: nf-amazon@3.4.4,nf-azure@1.20.2,nf-cloudcache@0.5.0,nf-codecommit@0.5.0,nf-console@1.3.0,nf-google@1.23.5,nf-k8s@1.2.2,nf-tower@1.17.5,nf-wave@1.16.1
-Mar-16 16:57:55.417 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
-Mar-16 16:57:55.418 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
-Mar-16 16:57:55.422 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
-Mar-16 16:57:55.449 [main] DEBUG nextflow.util.RetryConfig - Missing nextflow session - using default retry config
-Mar-16 16:57:55.741 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
-Mar-16 16:57:55.812 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /home/gokul/MA5121PROJ/nextflow.config
-Mar-16 16:57:55.819 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /home/gokul/MA5121PROJ/nextflow.config
-Mar-16 16:57:55.866 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
-Mar-16 16:57:56.593 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
-Mar-16 16:57:56.593 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
-Mar-16 16:57:56.629 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/gokul/.nextflow/secrets/store.json
-Mar-16 16:57:56.634 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@48f4713c] - activable => nextflow.secret.LocalSecretsProvider@48f4713c
-Mar-16 16:57:56.652 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declaration
-Mar-16 16:57:56.683 [main] DEBUG nextflow.cli.CmdRun - Launching `main.nf` [high_bhaskara] DSL2 - revision: 7a46afe1fa
-Mar-16 16:57:56.805 [main] DEBUG nextflow.Session - Session UUID: 04c257ed-d1c4-4562-950a-1cb63a3244f2
-Mar-16 16:57:56.806 [main] DEBUG nextflow.Session - Run name: high_bhaskara
-Mar-16 16:57:56.807 [main] DEBUG nextflow.Session - Executor pool size: 12
-Mar-16 16:57:56.820 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
-Mar-16 16:57:56.827 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=36; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
-Mar-16 16:57:56.873 [main] DEBUG nextflow.cli.CmdRun - 
+Mar-19 18:12:27.973 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.updated.nf
+Mar-19 18:12:28.231 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 25.10.4
+Mar-19 18:12:28.274 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/Users/vinithanadar/.nextflow/plugins; core-plugins: nf-amazon@3.4.4,nf-azure@1.20.2,nf-cloudcache@0.5.0,nf-codecommit@0.5.0,nf-console@1.3.0,nf-google@1.23.5,nf-k8s@1.2.2,nf-tower@1.17.5,nf-wave@1.16.1
+Mar-19 18:12:28.339 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Mar-19 18:12:28.340 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Mar-19 18:12:28.344 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
+Mar-19 18:12:28.392 [main] DEBUG nextflow.util.RetryConfig - Missing nextflow session - using default retry config
+Mar-19 18:12:28.667 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Mar-19 18:12:28.742 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /Users/vinithanadar/MA5121PROJ/nextflow.config
+Mar-19 18:12:28.752 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /Users/vinithanadar/MA5121PROJ/nextflow.config
+Mar-19 18:12:28.816 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+Mar-19 18:12:29.822 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Mar-19 18:12:29.823 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Mar-19 18:12:29.850 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /Users/vinithanadar/.nextflow/secrets/store.json
+Mar-19 18:12:29.858 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@4b5a078a] - activable => nextflow.secret.LocalSecretsProvider@4b5a078a
+Mar-19 18:12:29.878 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declaration
+Mar-19 18:12:29.894 [main] DEBUG nextflow.cli.CmdRun - Launching `main.updated.nf` [insane_mahavira] DSL2 - revision: 66716ff5ae
+Mar-19 18:12:29.966 [main] DEBUG nextflow.Session - Session UUID: 5a4867b1-2a53-4d01-9c27-c9a4a143d58f
+Mar-19 18:12:29.967 [main] DEBUG nextflow.Session - Run name: insane_mahavira
+Mar-19 18:12:29.968 [main] DEBUG nextflow.Session - Executor pool size: 8
+Mar-19 18:12:29.977 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Mar-19 18:12:29.983 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=24; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Mar-19 18:12:30.030 [main] DEBUG nextflow.cli.CmdRun - 
   Version: 25.10.4 build 11173
-  Created: 10-02-2026 15:17 UTC 
-  System: Linux 6.6.87.2-microsoft-standard-WSL2
-  Runtime: Groovy 4.0.28 on OpenJDK 64-Bit Server VM 17.0.7+4-jvmci-23.0-b10
+  Created: 10-02-2026 15:17 UTC (15:17 IST)
+  System: Mac OS X 26.1
+  Runtime: Groovy 4.0.28 on OpenJDK 64-Bit Server VM 22.0.1+8
   Encoding: UTF-8 (UTF-8)
-  Process: 454@GOKUL [127.0.1.1]
-  CPUs: 12 - Mem: 3.7 GB (2.6 GB) - Swap: 1 GB (1 GB)
-Mar-16 16:57:56.904 [main] DEBUG nextflow.Session - Work-dir: /home/gokul/MA5121PROJ/work [ext2/ext3]
-Mar-16 16:57:56.905 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/gokul/MA5121PROJ/bin
-Mar-16 16:57:56.917 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
-Mar-16 16:57:56.932 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
-Mar-16 16:57:56.936 [main] DEBUG nextflow.Session - Observer factory (v2): DefaultObserverFactory
-Mar-16 16:57:56.990 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
-Mar-16 16:57:57.010 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 13; maxThreads: 1000
-Mar-16 16:57:57.113 [main] DEBUG nextflow.Session - Session start
-Mar-16 16:57:57.643 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
-Mar-16 16:57:57.659 [main] WARN  nextflow.script.ScriptBinding - Access to undefined parameter `outdir` -- Initialise it to a default value eg. `params.outdir = some_value`
-Mar-16 16:57:57.661 [main] INFO  nextflow.Nextflow - 
+  Process: 47326@vinithas-laptop.nuigalway.ie [140.203.197.61]
+  CPUs: 8 - Mem: 8 GB (37.2 MB) - Swap: 14 GB (559.9 MB)
+Mar-19 18:12:30.066 [main] DEBUG nextflow.Session - Work-dir: /Users/vinithanadar/MA5121PROJ/work [Mac OS X]
+Mar-19 18:12:30.067 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /Users/vinithanadar/MA5121PROJ/bin
+Mar-19 18:12:30.077 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Mar-19 18:12:30.085 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
+Mar-19 18:12:30.089 [main] DEBUG nextflow.Session - Observer factory (v2): DefaultObserverFactory
+Mar-19 18:12:30.147 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Mar-19 18:12:30.160 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 9; maxThreads: 1000
+Mar-19 18:12:30.226 [main] DEBUG nextflow.Session - Session start
+Mar-19 18:12:30.992 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Mar-19 18:12:31.010 [main] INFO  nextflow.Nextflow - 
       LIST OF PARAMETERS
 ================================
 Reads            : data/*_{1,2}.fq.gz
-Output-folder    : null
+Output-folder    : outputs
 Adapters         : adapters.fa
 
-Mar-16 16:57:57.965 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Mar-16 16:57:57.966 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Mar-16 16:57:57.980 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
-Mar-16 16:57:57.991 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=12; memory=3.7 GB; capacity=12; pollInterval=100ms; dumpInterval=5m
-Mar-16 16:57:57.995 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
-Mar-16 16:57:58.028 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'fastqc': maxForks=0; fair=false; array=0
-Mar-16 16:57:58.084 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Mar-16 16:57:58.085 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Mar-16 16:57:58.087 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'trimmomatic': maxForks=0; fair=false; array=0
-Mar-16 16:57:58.094 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: trimmomatic, fastqc
-Mar-16 16:57:58.097 [main] DEBUG nextflow.Session - Igniting dataflow network (4)
-Mar-16 16:57:58.107 [PathVisitor-1] DEBUG nextflow.file.PathVisitor - files for syntax: glob; folder: data/; pattern: *_{1,2}.fq.gz; options: [checkIfExists:true]
-Mar-16 16:57:58.110 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > fastqc
-Mar-16 16:57:58.112 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > trimmomatic
-Mar-16 16:57:58.114 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
-  Script_ce713b2995a2074d: /home/gokul/MA5121PROJ/main.nf
-Mar-16 16:57:58.114 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
-Mar-16 16:57:58.114 [main] DEBUG nextflow.Session - Session await
-Mar-16 16:57:58.430 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Mar-16 16:57:58.435 [Task submitter] INFO  nextflow.Session - [50/af0a62] Submitted process > fastqc (1)
-Mar-16 16:57:58.456 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Mar-16 16:57:58.458 [Task submitter] INFO  nextflow.Session - [57/48bfc4] Submitted process > trimmomatic (1)
+Mar-19 18:12:31.242 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withLabel:fastqc` matches labels `fastqc` for process with name fastqc
+Mar-19 18:12:31.244 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar-19 18:12:31.244 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar-19 18:12:31.265 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Mar-19 18:12:31.273 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=8; memory=8 GB; capacity=8; pollInterval=100ms; dumpInterval=5m
+Mar-19 18:12:31.277 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Mar-19 18:12:31.296 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'fastqc': maxForks=0; fair=false; array=0
+Mar-19 18:12:31.349 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withLabel:trimmomatic` matches labels `trimmomatic` for process with name trimmomatic
+Mar-19 18:12:31.350 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar-19 18:12:31.350 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar-19 18:12:31.351 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'trimmomatic': maxForks=0; fair=false; array=0
+Mar-19 18:12:31.358 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar-19 18:12:31.359 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar-19 18:12:31.360 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'bwa_mem2': maxForks=0; fair=false; array=0
+Mar-19 18:12:31.367 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: trimmomatic, fastqc, bwa_mem2
+Mar-19 18:12:31.372 [main] DEBUG nextflow.Session - Igniting dataflow network (6)
+Mar-19 18:12:31.380 [PathVisitor-1] DEBUG nextflow.file.PathVisitor - files for syntax: glob; folder: data/; pattern: *_{1,2}.fq.gz; options: [checkIfExists:true]
+Mar-19 18:12:31.382 [PathVisitor-3] DEBUG nextflow.file.PathVisitor - files for syntax: glob; folder: ./; pattern: LG12.fasta*; options: [:]
+Mar-19 18:12:31.383 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > fastqc
+Mar-19 18:12:31.384 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > trimmomatic
+Mar-19 18:12:31.384 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > bwa_mem2
+Mar-19 18:12:31.385 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_e349bc9c82891b43: /Users/vinithanadar/MA5121PROJ/main.updated.nf
+Mar-19 18:12:31.389 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Mar-19 18:12:31.389 [main] DEBUG nextflow.Session - Session await
+Mar-19 18:12:32.104 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Mar-19 18:12:32.109 [Task submitter] INFO  nextflow.Session - [70/fa155b] Submitted process > trimmomatic (1)
+Mar-19 18:13:44.081 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: trimmomatic (1); status: COMPLETED; exit: 0; error: -; workDir: /Users/vinithanadar/MA5121PROJ/work/70/fa155bf9ae290574cb89d846624626]
+Mar-19 18:13:44.086 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'TaskFinalizer' minSize=10; maxSize=24; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Mar-19 18:13:44.105 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Mar-19 18:13:44.110 [Task submitter] INFO  nextflow.Session - [8c/0e9761] Submitted process > fastqc (1)
+Mar-19 18:13:44.203 [TaskFinalizer-1] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'PublishDir' minSize=10; maxSize=24; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Mar-19 18:13:51.124 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: fastqc (1); status: COMPLETED; exit: 0; error: -; workDir: /Users/vinithanadar/MA5121PROJ/work/8c/0e97616fd6c6ba7ae100f6471f35c2]
+Mar-19 18:13:51.150 [main] DEBUG nextflow.Session - Session await > all processes finished
+Mar-19 18:13:51.232 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Mar-19 18:13:51.232 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Mar-19 18:13:51.250 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'TaskFinalizer' shutdown completed (hard=false)
+Mar-19 18:13:51.253 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'PublishDir' shutdown completed (hard=false)
+Mar-19 18:13:51.270 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=2; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=5m 15s; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=2; peakCpus=8; peakMemory=12 GB; ]
+Mar-19 18:13:51.411 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Mar-19 18:13:51.450 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'FileTransfer' shutdown completed (hard=false)
+Mar-19 18:13:51.451 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
