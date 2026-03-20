@@ -2,9 +2,6 @@
 
 nextflow.enable.dsl=2
 
-
-
-
 // PARAMETERS
 
 params.reads = 'data/*_{1,2}.fq.gz'       
@@ -30,6 +27,9 @@ read_pairs_ch = Channel.fromFilePairs(params.reads, checkIfExists: true)
 adapter_ch = Channel.fromPath(params.adapters)
 
 genome_ch = Channel.fromPath("${params.genome}*").collect()
+
+genome_ch = Channel.fromPath("data/LG12.fasta*")
+
 
 
 // PROCESS: FASTQC
@@ -92,7 +92,7 @@ process bwa_mem2 {
      
     script:
     """
-    bwa-mem2 mem -t 4 ${genome} ${paired_reads[0]} ${paired_reads[1]} | samtools sort-@ 4 -o ${sample}.bam
+    bwa-mem2 mem -t 4 LG12.fasta ${paired_reads[0]} ${paired_reads[1]} | samtools sort -@ 4 -o ${sample}.bam
     """
 }
  

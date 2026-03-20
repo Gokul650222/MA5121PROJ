@@ -1,0 +1,14 @@
+Looking to launch executable "/Users/vinithanadar/miniconda/envs/nf_course/bin/bwa-mem2.sse42", simd = .sse42
+Launching executable "/Users/vinithanadar/miniconda/envs/nf_course/bin/bwa-mem2.sse42"
+dyld[52977]: Library not loaded: @rpath/libcrypto.3.dylib
+  Referenced from: <E08D0338-7F8C-3A1C-9752-34F09D4A6F88> /Users/vinithanadar/miniconda/envs/nf_course/bin/samtools
+  Reason: tried: '/Users/vinithanadar/miniconda/envs/nf_course/bin/../lib/libcrypto.3.dylib' (no such file), '/Users/vinithanadar/miniconda/envs/nf_course/bin/../lib/libcrypto.3.dylib' (no such file), '/usr/local/lib/libcrypto.3.dylib' (no such file), '/usr/lib/libcrypto.3.dylib' (no such file, not in dyld cache)
+-----------------------------
+Executing in SSE4.2 mode!!
+-----------------------------
+* SA compression enabled with xfactor: 8
+* Ref file: LG12.fasta
+* Entering FMI_search
+ERROR! Unable to open the file: LG12.fasta.bwt.2bit.64
+/Users/vinithanadar/MA5121PROJ/work/6b/585b6139c33f70ea21e7e7958ef84c/.command.sh: line 2: 52976 Exit 1                  bwa-mem2 mem -t 4 LG12.fasta A_33_FDSW202661760-1r_HTNK5DSXY_L3_sub_1.paired.fq.gz A_33_FDSW202661760-1r_HTNK5DSXY_L3_sub_2.paired.fq.gz
+     52977 Abort trap: 6           | samtools sort -@ 4 -o A_33_FDSW202661760-1r_HTNK5DSXY_L3_sub.bam
