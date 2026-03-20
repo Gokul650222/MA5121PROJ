@@ -33,8 +33,8 @@ adapter_ch = Channel.fromPath(params.adapters)
 
 // channel for the genome file
 
-genome_ch = Channel.fromPath("data/LG12.fasta*").collect()
-ref_prefix = file(params.genome).name
+genome_ch = Channel.fromPath("data/LG12.fasta*")
+
 
 
 // PROCESS: FASTQC
@@ -88,15 +88,15 @@ process bwa_mem2 {
 
     input:
     tuple val(sample), path(paired_reads)
-    path index_files
-    val index_prefix
+    path genome_files
+    
 
     output:
     tuple val(sample), path("${sample}.bam")
 
     script:
     """
-    bwa-mem2 mem -t 2 {index_prefix} ${paired_reads[0]} ${paired_reads[1]} > ${sample}.sam
+    bwa-mem2 mem -t 2 ./data/LG12.fasta ${paired_reads[0]} ${paired_reads[1]} | samtools sort -@ 2 -o ${sample}.bam
     """
 }
 
@@ -110,6 +110,6 @@ workflow {
        
     trimmomatic(read_pairs_ch, adapter_ch)
  
-    bwa_mem2(trimmomatic.out.paired_reads, genome_ch, ref_prefix)
+    bwa_mem2(trimmomatic.out.paired_reads, genome_ch)
 }
 
