@@ -23,17 +23,11 @@ Adapters         : ${params.adapters}
 
 // CHANNELS
 
-// Channel for paired-end reads
 
 read_pairs_ch = Channel.fromFilePairs(params.reads, checkIfExists: true)
     .map { sample, reads -> tuple(sample, reads.collect{it.toAbsolutePath()}) }
 
-
-// Channel for adapter file
-
 adapter_ch = Channel.fromPath(params.adapters)
-
-// channel for the genome file
 
 genome_ch = Channel.fromPath("${params.genome}*").collect()
 
@@ -91,7 +85,7 @@ process bwa_mem2 {
 
     input:
     tuple val(sample), path(paired_reads)
-    path genome_files
+    path index_files
 
     output:
     tuple val(sample), path("${sample}.bam")
